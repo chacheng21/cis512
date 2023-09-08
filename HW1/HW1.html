@@ -1,0 +1,70 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Weather App</title>
+  <link rel="stylesheet" href="styles.css">
+</head>
+
+<body>
+  <div class="header">
+    <div class="location">
+      <button class="geolocation-icon"><img src="https://static.thenounproject.com/png/37658-200.png" alt="Geolocation Icon"
+          width="24" height="24"></button>
+      <span>Philadelphia</span>
+    </div>
+    <div class="weather">
+        <img src="https://cdn-icons-png.flaticon.com/512/979/979585.png" alt="Geolocation Icon" width="24" height="24">
+      <span>Sunny</span>
+    </div>
+  </div>
+  <div class="temperature">
+    <span class="main-temp">72°</span>
+    <span class="feels-like">Feels Like: 74°</span>
+    <div class="min-max">
+      <span class="min-temp"><span class="blue-text">60°</span></span>
+      <span class="max-temp"><span class="red-text">75°</span></span>
+    </div>
+  </div>
+  <div class="alerts">
+    <div class="edit-button">&#9998;</div>
+    <div class="alert-box">
+      <div class="alert-header">
+        <span class="alert-icon">!</span>
+        <h3>Alerts</h3>
+      </div>
+      <ul>
+        <li><span class="emoji-icon">🌧️</span> Heavy rain expected at 4pm.</li>
+        <li><span class="emoji-icon">💨</span> Poor air quality in the area. Stay indoors.</li>
+      </ul>
+    </div>
+  </div>
+  <div class="weather-widgets">
+    <div class="edit-button">&#9998;</div>
+    <div class="widget-header">
+      <h3><span class="emoji-icon">ℹ️</span> Important Weather Info</h3>
+    </div>
+    <div class="widget-content">
+      <div style="color: red;" class="widget">
+        <h4>Air Quality</h4>
+        <br>
+        <p>91</p>
+        <p>Very Bad</p>
+      </div>
+      <div style="color: orange;" class="widget">
+        <h4>UV Index</h4>
+        <br>
+        <p>5</p>
+        <p>Moderate</p>
+      </div>
+    </div>
+  </div>
+  <div class="forecast-switch">
+    <button id="today-button" class="active">Today</button>
+    <button id="forecast-button">9-Day Forecast</button>
+  </div>
+</body>
+
+</html>
